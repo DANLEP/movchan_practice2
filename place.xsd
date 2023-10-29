@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://it.nure.ua/xml/entity/place"
+            xmlns:dt="http://it.nure.ua/xml/entity/dataTypes"
+            elementFormDefault="qualified">
+
+
+    <!-- Importing DataTypes -->
+    <xsd:import namespace="http://it.nure.ua/xml/entity/dataTypes" schemaLocation="dataTypes.xsd"/>
+
+    <!-- Place Element Definition -->
+    <xsd:complexType name="Place">
+        <xsd:sequence>
+            <xsd:element name="ID" type="dt:IDType"/>
+            <xsd:element name="Name" type="dt:Name"/>
+            <xsd:element name="Description" type="dt:DescriptionType"/>
+            <xsd:element name="Type">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="Beach"/>
+                        <xsd:enumeration value="Mountain"/>
+                        <xsd:enumeration value="City"/>
+                        <xsd:enumeration value="Excursion"/>
+                        <xsd:enumeration value="Active"/>
+                        <xsd:enumeration value="Nature"/>
+                        <xsd:enumeration value="Cultural"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="Address" type="dt:AddressType" minOccurs="0"/>
+            <xsd:element name="Coordinate" type="dt:CoordinateType"/>
+            <xsd:element name="VisitTime" type="dt:DiapasonTime" minOccurs="0"/>
+            <xsd:element name="EntranceFee" type="dt:PriceDetail" minOccurs="0"/>
+            <xsd:element name="Photos" minOccurs="0">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Photo" type="dt:Photo" minOccurs="0" maxOccurs="10" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Seasonality" type="dt:SeasonalityType"/>
+            <xsd:element name="Tags" minOccurs="0">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Tag" type="xsd:string" maxOccurs="unbounded" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="isRecommended" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="rating" use="optional" default="0">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:decimal">
+                    <xsd:minInclusive value="0"/>
+                    <xsd:maxInclusive value="5"/>
+                    <xsd:fractionDigits value="1"/>
+                    <xsd:totalDigits value="2"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+
+</xsd:schema>
