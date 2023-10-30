@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<locations xmlns:pl="http://it.nure.ua/xml/entity/place/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://it.nure.ua/xml/entity/location/ locations.xsd"
+           xmlns="http://it.nure.ua/xml/entity/location/">
+    <location id="3">
+        <title>Київ</title>
+        <area>
+            <coordinate>
+                <pl:Latitude>50.4501</pl:Latitude>
+                <pl:Longitude>30.5234</pl:Longitude>
+            </coordinate>
+            <coordinate>
+                <pl:Latitude>50.4547</pl:Latitude>
+                <pl:Longitude>30.5238</pl:Longitude>
+            </coordinate>
+            <coordinate>
+                <pl:Latitude>50.4519</pl:Latitude>
+                <pl:Longitude>30.5272</pl:Longitude>
+            </coordinate>
+        </area>
+        <places>
+            <place id="3" isRecommended="false">
+                <pl:title>Пляж Гідропарк</pl:title>
+                <pl:description>Популярне місце відпочинку серед місцевих жителів та туристів.</pl:description>
+                <pl:type>Beach</pl:type>
+                <pl:address>
+                    <pl:Street>Гідропарк</pl:Street>
+                    <pl:HouseNumber>
+                        <pl:NumberWithLetter>12A</pl:NumberWithLetter>
+                    </pl:HouseNumber>
+                    <pl:City>Київ</pl:City>
+                    <pl:PostalCode>02000</pl:PostalCode>
+                </pl:address>
+                <pl:coordinate>
+                    <pl:Latitude>50.4510</pl:Latitude>
+                    <pl:Longitude>30.5767</pl:Longitude>
+                </pl:coordinate>
+                <pl:visitTime>10:00-23:00</pl:visitTime>
+                <pl:entranceFee>
+                    <pl:Price>100.000</pl:Price>
+                    <pl:Currency>UAH</pl:Currency>
+                </pl:entranceFee>
+                <pl:photos>
+                    <pl:photo>http://example.com/photo1.jpg</pl:photo>
+                    <pl:photo>http://example.com/photo2.jpg</pl:photo>
+                    <pl:photo>http://example.com/photo3.jpg</pl:photo>
+                </pl:photos>
+                <pl:seasonality>All Season</pl:seasonality>
+                <pl:tags>
+                    <pl:Tag>Пляж</pl:Tag>
+                    <pl:Tag>Відпочинок</pl:Tag>
+                </pl:tags>
+            </place>
+        </places>
+    </location>
+    <location id="4">
+        <title>Львів</title>
+        <area>
+            <coordinate>
+                <pl:Latitude>49.8420</pl:Latitude>
+                <pl:Longitude>24.0323</pl:Longitude>
+            </coordinate>
+            <coordinate>
+                <pl:Latitude>49.8435</pl:Latitude>
+                <pl:Longitude>24.0311</pl:Longitude>
+            </coordinate>
+            <coordinate>
+                <pl:Latitude>49.8435</pl:Latitude>
+                <pl:Longitude>24.0311</pl:Longitude>
+            </coordinate>
+        </area>
+        <places>
+            <place id="4" isRecommended="true" rating="0.8">
+                <pl:title>Оперний театр</pl:title>
+                <pl:description>Знаменитий архітектурний пам'ятник міста Львова.</pl:description>
+                <pl:type>Cultural</pl:type>
+                <pl:address>
+                    <pl:Street>Свободи</pl:Street>
+                    <pl:HouseNumber>
+                        <pl:Number>28</pl:Number>
+                    </pl:HouseNumber>
+                    <pl:City>Львів</pl:City>
+                    <pl:PostalCode>79000</pl:PostalCode>
+                </pl:address>
+                <pl:coordinate>
+                    <pl:Latitude>49.8435</pl:Latitude>
+                    <pl:Longitude>24.0256</pl:Longitude>
+                </pl:coordinate>
+                <pl:seasonality>All Season</pl:seasonality>
+            </place>
+        </places>
+    </location>
+    <location id="5">
+        <title>Одеса</title>
+        <area>
+            <coordinate>
+                <pl:Latitude>46.4825</pl:Latitude>
+                <pl:Longitude>30.7233</pl:Longitude>
+            </coordinate>
+            <coordinate>
+                <pl:Latitude>46.4810</pl:Latitude>
+                <pl:Longitude>30.7245</pl:Longitude>
+            </coordinate>
+            <coordinate>
+                <pl:Latitude>46.4810</pl:Latitude>
+                <pl:Longitude>30.7245</pl:Longitude>
+            </coordinate>
+        </area>
+        <places>
+            <place id="5" isRecommended="true" rating="0.9">
+                <pl:title>Потьомкінські сходи</pl:title>
+                <pl:description>Знамениті сходи в центрі Одеси.</pl:description>
+                <pl:type>Cultural</pl:type>
+                <pl:address>
+                    <pl:Street>Приморський бульвар</pl:Street>
+                    <pl:HouseNumber>
+                        <pl:Number>1</pl:Number>
+                    </pl:HouseNumber>
+                    <pl:City>Одеса</pl:City>
+                    <pl:PostalCode>65000</pl:PostalCode>
+                </pl:address>
+                <pl:coordinate>
+                    <pl:Latitude>46.4868</pl:Latitude>
+                    <pl:Longitude>30.7355</pl:Longitude>
+                </pl:coordinate>
+                <pl:seasonality>All Season</pl:seasonality>
+                <pl:tags>
+                    <pl:Tag>Історичний</pl:Tag>
+                    <pl:Tag>Архітектура</pl:Tag>
+                </pl:tags>
+            </place>
+        </places>
+    </location>
+    <location id="6">
+        <title>Харків</title>
+        <area>
+            <coordinate>
+                <pl:Latitude>49.9935</pl:Latitude>
+                <pl:Longitude>36.2304</pl:Longitude>
+            </coordinate>
+            <coordinate>
+                <pl:Latitude>49.9947</pl:Latitude>
+                <pl:Longitude>36.2292</pl:Longitude>
+            </coordinate>
+            <coordinate>
+                <pl:Latitude>49.9947</pl:Latitude>
+                <pl:Longitude>36.2292</pl:Longitude>
+            </coordinate>
+        </area>
+        <places>
+            <place id="6" isRecommended="false" rating="0.7">
+                <pl:title>Держпром</pl:title>
+                <pl:description>Величезний архітектурний комплекс в центрі Харкова.</pl:description>
+                <pl:type>Cultural</pl:type>
+                <pl:address>
+                    <pl:Street>Площа Свободи</pl:Street>
+                    <pl:HouseNumber>
+                        <pl:NumberWithLetter>7А</pl:NumberWithLetter>
+                    </pl:HouseNumber>
+                    <pl:City>Харків</pl:City>
+                    <pl:PostalCode>61000</pl:PostalCode>
+                </pl:address>
+                <pl:coordinate>
+                    <pl:Latitude>49.9941</pl:Latitude>
+                    <pl:Longitude>36.2310</pl:Longitude>
+                </pl:coordinate>
+                <pl:seasonality>All Season</pl:seasonality>
+                <pl:tags>
+                    <pl:Tag>Архітектура</pl:Tag>
+                    <pl:Tag>Історія</pl:Tag>
+                </pl:tags>
+            </place>
+        </places>
+    </location>
+</locations>
