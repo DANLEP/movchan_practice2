@@ -286,5 +286,11 @@ public class DOMParser {
         System.out.println("====================================");
         System.out.println("Here is the locations: \n" + locations);
         System.out.println("====================================");
+
+        in = new FileInputStream("invalid_locations.xml");
+        locations = domParser.parse(in, schema);
+        System.out.println("====================================");
+        System.out.println("Here is the orders from invalid xml: \n" + locations);
+        System.out.println("====================================");
     }
 }

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<loc:locations
+        xmlns:loc="http://it.nure.ua/xml/entity/location/"
+        xmlns:plac="http://it.nure.ua/xml/entity/place/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://it.nure.ua/xml/entity/location/ locations.xsd ">
+    <!--Zero or more repetitions:-->
+    <loc:location id="3">
+        <loc:title>Київ</loc:title>
+        <loc:area>
+            <!--3 or more repetitions:-->
+            <loc:coordinate>
+                <plac:Latitude>91.4501</plac:Latitude>
+                <plac:Longitude>30.5234</plac:Longitude>
+            </loc:coordinate>
+            <loc:coordinate>
+                <plac:Latitude>50.4547</plac:Latitude>
+                <plac:Longitude>30.5238</plac:Longitude>
+            </loc:coordinate>
+            <loc:coordinate>
+                <plac:Latitude>50.4519</plac:Latitude>
+                <plac:Longitude>30.5272</plac:Longitude>
+            </loc:coordinate>
+        </loc:area>
+        <loc:places>
+            <!--1 or more repetitions:-->
+            <loc:place id="3" isRecommended="false" rating="0.2">
+                <plac:title>Пляж Гідропарк</plac:title>
+                <plac:description>Популярне місце відпочинку серед місцевих жителів та туристів.</plac:description>
+                <plac:type>Beach</plac:type>
+                <!--Optional:-->
+                <plac:address>
+                    <plac:Street>Гідропарк</plac:Street>
+                    <plac:HouseNumber>
+                        <!--You have a CHOICE of the next 2 items at this level-->
+                        <plac:NumberWithLetter>12A</plac:NumberWithLetter>
+                    </plac:HouseNumber>
+                    <plac:City>Київ</plac:City>
+                    <plac:PostalCode>02000</plac:PostalCode>
+                </plac:address>
+                <plac:coordinate>
+                    <plac:Latitude>50.4510</plac:Latitude>
+                    <plac:Longitude>30.5767</plac:Longitude>
+                </plac:coordinate>
+                <!--Optional:-->
+                <plac:visitTime>10:00-23:00</plac:visitTime>
+                <!--Optional:-->
+                <plac:entranceFee>
+                    <plac:Price>100.000</plac:Price>
+                    <plac:Currency>UAH</plac:Currency>
+                </plac:entranceFee>
+                <!--Optional:-->
+                <plac:photos>
+                    <!--0 to 10 repetitions:-->
+                    <plac:photo>http://example.com/photo1.jpg</plac:photo>
+                    <plac:photo>http://example.com/photo2.jpg</plac:photo>
+                    <plac:photo>http://example.com/photo3.jpg</plac:photo>
+                </plac:photos>
+                <plac:seasonality>All Season</plac:seasonality>
+                <!--Optional:-->
+                <plac:tags>
+                    <!--1 or more repetitions:-->
+                    <plac:Tag>Пляж</plac:Tag>
+                    <plac:Tag>Відпочинок</plac:Tag>
+                </plac:tags>
+            </loc:place>
+        </loc:places>
+    </loc:location>
+
+</loc:locations>
