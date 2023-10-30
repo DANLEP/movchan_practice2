@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://it.nure.ua/xml/entity/location/"
+            xmlns:tns="http://it.nure.ua/xml/entity/location/"
+            elementFormDefault="qualified">
+    <xsd:include schemaLocation="location.xsd"/>
+    <xsd:element name="locations">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="location" type="tns:Location" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

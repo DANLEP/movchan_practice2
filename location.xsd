@@ -1,37 +1,36 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://it.nure.ua/xml/entity/location"
-            xmlns:tns="http://it.nure.ua/xml/entity/location"
-            xmlns:dt="http://it.nure.ua/xml/entity/dataTypes"
-            xmlns:pl="http://it.nure.ua/xml/entity/place"
+            targetNamespace="http://it.nure.ua/xml/entity/location/"
+            xmlns:pl="http://it.nure.ua/xml/entity/place/"
+            xmlns:ent="http://it.nure.ua/xml/entity/"
             elementFormDefault="qualified">
 
-    <!-- Importing DataTypes and Place -->
-    <xsd:import namespace="http://it.nure.ua/xml/entity/dataTypes" schemaLocation="dataTypes.xsd"/>
-    <xsd:import namespace="http://it.nure.ua/xml/entity/place" schemaLocation="place.xsd"/>
+    <!-- Importing Place and Entity  -->
+    <xsd:import namespace="http://it.nure.ua/xml/entity/place/" schemaLocation="place.xsd"/>
+    <xsd:import namespace="http://it.nure.ua/xml/entity/" schemaLocation="entity.xsd" />
 
     <!-- Location Element Definition -->
-    <xsd:element name="Location">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="LocationID" type="dt:IDType" minOccurs="1" maxOccurs="1" />
-                <xsd:element name="LocationName" type="dt:Name" minOccurs="1" maxOccurs="1" />
-                <xsd:element name="Area" minOccurs="1" maxOccurs="1">
-                    <xsd:complexType>
-                        <xsd:sequence>
-                            <xsd:element name="Coordinate" type="dt:CoordinateType" minOccurs="3" maxOccurs="unbounded" />
-                        </xsd:sequence>
-                    </xsd:complexType>
-                </xsd:element>
-                <xsd:element name="Places" minOccurs="1" maxOccurs="1">
-                    <xsd:complexType>
-                        <xsd:sequence>
-                            <xsd:element name="Place" type="pl:Place" minOccurs="1" maxOccurs="unbounded" />
-                        </xsd:sequence>
-                    </xsd:complexType>
-                </xsd:element>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-
+    <xsd:complexType name="Location">
+        <xsd:complexContent>
+            <xsd:extension base="ent:Entity">
+                <xsd:sequence>
+                    <xsd:element name="title" type="pl:Name" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="area" minOccurs="1" maxOccurs="1">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="coordinate" type="pl:CoordinateType" minOccurs="3" maxOccurs="unbounded" />
+                            </xsd:sequence>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="places" minOccurs="1" maxOccurs="1">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="place" type="pl:Place" minOccurs="1" maxOccurs="unbounded" />
+                            </xsd:sequence>
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
 </xsd:schema>
