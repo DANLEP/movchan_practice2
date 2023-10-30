@@ -439,7 +439,7 @@ public class Place
     })
     public static class Photos {
 
-        protected List<String> photo;
+        public List<String> photo;
 
         /**
          * Gets the value of the photo property.
@@ -499,7 +499,7 @@ public class Place
     public static class Tags {
 
         @XmlElement(name = "Tag", required = true)
-        protected List<String> tag;
+        public List<String> tag;
 
         /**
          * Gets the value of the tag property.

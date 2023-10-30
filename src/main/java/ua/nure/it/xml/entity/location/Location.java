@@ -176,7 +176,7 @@ public class Location
     public static class Area {
 
         @XmlElement(required = true)
-        protected List<CoordinateType> coordinate;
+        public List<CoordinateType> coordinate;
 
         /**
          * Gets the value of the coordinate property.
@@ -236,7 +236,7 @@ public class Location
     public static class Places {
 
         @XmlElement(required = true)
-        protected List<Place> place;
+        public List<Place> place;
 
         /**
          * Gets the value of the place property.
