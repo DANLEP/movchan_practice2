@@ -42,7 +42,7 @@ public interface Const {
     String SCHEMA_LOCATION__ATTR_NAME = "schemaLocation";
     String SCHEMA_LOCATION__ATTR_FQN = "xsi:schemaLocation";
     String XSI_SPACE__PREFIX = "xsi";
-    String SCHEMA_LOCATION__URI = "http://it.nure.ua/xml/entity/location/ location.xsd";
+    String SCHEMA_LOCATION__URI = "http://it.nure.ua/xml/entity/location/ locations.xsd";
 
     // validation features
     public static final String FEATURE__TURN_VALIDATION_ON =
