@@ -33,9 +33,9 @@ public interface Const {
     String TAG_TAGS = "tags";
     String TAG_TAG = "Tag";
 
-    String XML_FILE = "location.xsd.xml";
+    String XML_FILE = "locations.xsd.xml";
     String INVALID_XML_FILE = "invalid_locations.xml";
-    String XSD_FILE = "location.xsd";
+    String XSD_FILE = "locations.xsd";
     Class<?> OBJECT_FACTORY = ua.nure.it.xml.entity.location.ObjectFactory.class;
 
     String LOCATIONS_NAMESPACE_URI = "http://it.nure.ua/xml/entity/location/";

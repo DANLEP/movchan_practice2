@@ -13,7 +13,6 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -30,7 +29,7 @@ public class SAXParser extends DefaultHandler {
 
     private String current;
     private String titleParent;
-    private String coorinateParent;
+    private String coordinateParent;
     private List<Location> locations;
     private Location location;
     private CoordinateType coordinateType;
@@ -43,8 +42,7 @@ public class SAXParser extends DefaultHandler {
     }
 
     @Override
-    public void error(org.xml.sax.SAXParseException e) throws SAXException {
-//		throw e; // throw exception if xml not valid
+    public void error(org.xml.sax.SAXParseException e) {
         System.err.println(e.getMessage());
     }
 
@@ -61,7 +59,7 @@ public class SAXParser extends DefaultHandler {
             if (attributes.getLength() > 0)
                 location.setId(Integer.parseInt(attributes.getValue("id")));
         } else if (Const.TAG_AREA.equals(current)) {
-            coorinateParent = Const.TAG_AREA;
+            coordinateParent = Const.TAG_AREA;
             location.setArea(new Location.Area());
         } else if (Const.TAG_COORDINATE.equals(current)) {
             coordinateType = new CoordinateType();
@@ -69,7 +67,7 @@ public class SAXParser extends DefaultHandler {
             location.setPlaces(new Location.Places());
         } else if (Const.TAG_PLACE.equals(current)) {
             titleParent = Const.TAG_PLACE;
-            coorinateParent = Const.TAG_PLACE;
+            coordinateParent = Const.TAG_PLACE;
             place = new Place();
             if (attributes.getLength() > 0) {
                 place.setId(Integer.parseInt(attributes.getValue(Const.ATTR_ID)));
@@ -109,8 +107,6 @@ public class SAXParser extends DefaultHandler {
             place.setDescription(value);
         } else if (Const.TAG_TYPE.equals(current)){
             place.setType(value);
-        } else if (Const.TAG_ADDRESS.equals(current)){
-            // TODO:
         } else if (Const.TAG_VISIT_TIME.equals(current)){
             place.setVisitTime(value);
         } else if (Const.TAG_PRICE.equals(current)){
@@ -142,9 +138,9 @@ public class SAXParser extends DefaultHandler {
             locations.add(location);
             log(current + " " + location);
         } else if (Const.TAG_COORDINATE.equals(localName)) {
-            if (Const.TAG_AREA.equals(coorinateParent))
+            if (Const.TAG_AREA.equals(coordinateParent))
                 location.getArea().getCoordinate().add(coordinateType);
-            if (Const.TAG_PLACE.equals(coorinateParent))
+            if (Const.TAG_PLACE.equals(coordinateParent))
                 place.setCoordinate(coordinateType);
         } else if (Const.TAG_PLACE.equals(localName)){
             location.getPlaces().getPlace().add(place);
