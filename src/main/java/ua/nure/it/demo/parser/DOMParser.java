@@ -480,13 +480,6 @@ public class DOMParser {
         System.out.println("Here is the locations: \n" + locations);
         System.out.println("====================================");
 
-//        in = new FileInputStream("invalid_locations.xml");
-//        locations = domParser.parse(in, schema);
-//        System.out.println("====================================");
-//        System.out.println("Here is the orders from invalid xml: \n" + locations);
-//        System.out.println("====================================");
-
-
         try {
             saveLocations(locations, new FileOutputStream(Const.XML_FILE + ".dom.xml"));
         } catch (Exception ex) {
@@ -495,5 +488,11 @@ public class DOMParser {
             System.err.println(ex.getClass().getName());
             System.err.println("====================================");
         }
+
+        in = new FileInputStream("invalid_locations.xml");
+        locations = domParser.parse(in, schema);
+        System.out.println("====================================");
+        System.out.println("Here is the locations from invalid xml: \n" + locations);
+        System.out.println("====================================");
     }
 }
