@@ -46,6 +46,7 @@ public interface Const {
     String PLACES_NAMESPACE_URI = "http://it.nure.ua/xml/entity/place/";
     String PLACE_NS = "pl:";
     String PLACES_SCHEMA_LOCATION_URI = "http://it.nure.ua/xml/entity/place/ place.xsd";
+    String XSL_LOCATION_URI = "locations.xsl";
 
     // validation features
     public static final String FEATURE__TURN_VALIDATION_ON =

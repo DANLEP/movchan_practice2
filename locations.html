@@ -1,0 +1,278 @@
+<html xmlns:pl="http://it.nure.ua/xml/entity/place/" xmlns:ent="http://it.nure.ua/xml/entity/" xmlns:loc="http://it.nure.ua/xml/entity/location/">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+                    body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f4;
+                    margin: 20px;
+                    }
+                    h1, h2 {
+                    color: #333366;
+                    border-bottom: 2px solid #333366;
+                    padding-bottom: 10px;
+                    }
+                    ul {
+                    list-style-type: none;
+                    padding: 0;
+                    }
+                    li {
+                    background-color: #fff;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    }
+                    img {
+                    margin-right: 10px;
+                    border-radius: 5px;
+                    }
+                    span {
+                    background-color: #ddd;
+                    padding: 2px 5px;
+                    margin-right: 5px;
+                    border-radius: 3px;
+                    }
+
+                    li > div.place {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    }
+                    li > div.place > strong {
+                    color: #555;
+                    margin-right: 5px;
+                    }
+                    li > div.place > img {
+                    max-width: 150px;
+                    border: 1px solid #ddd;
+                    }
+                    li > div.place > span.tag {
+                    background-color: #eee;
+                    padding: 2px 8px;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                    display: inline-block;
+                    }
+
+                    .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 0 20px;
+                    }
+
+                    /* Стили для элементов place */
+                    li > div.place {
+                    /* ... (предыдущие стили) ... */
+                    margin-bottom: 20px;
+                    }
+
+                    /* Адаптивные стили */
+                    @media (max-width: 768px) {
+                    .container {
+                    padding: 0 10px;
+                    }
+
+                    li > div.place {
+                    flex-direction: column;
+                    }
+
+                    h1 .main-text {
+                    text-align: center;
+                    margin-top: 50px;
+                    }
+
+                    .recommended {
+                    color: green;
+                    font-weight: bold;
+                    border: 1px solid green;
+                    display: inline-block;
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    }
+                    .photos {
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 10px;
+                    }
+                </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="main-text">Локаціі</h1>
+            <h2>Київ</h2>
+            <p>Координати:</p>
+            <ul>
+                <li>50.4501,&nbsp;30.5234</li>
+                <li>50.4547,&nbsp;30.5238</li>
+                <li>50.4519,&nbsp;30.5272</li>
+            </ul>
+            <p>Місця:</p>
+            <ul>
+                <li>
+                    <div class="place">
+                        <strong>Назва:</strong>Пляж Гідропарк
+                        <br>
+                        <strong>Опис:</strong>Популярне місце відпочинку серед місцевих жителів та туристів.
+                        <br>
+                        <strong>Тип:</strong>Beach
+                        <br>
+                        <strong>Адрес:</strong>Гідропарк&nbsp;12A
+                    ,
+                    Київ,
+                    02000
+                        <br>
+                        <strong>Координати:</strong>50.4510,&nbsp;30.5767
+                        <br>
+                        <strong>Час відвідування:</strong>10:00-23:00
+                        <br>
+                        <strong>Вартість входу:</strong>
+                    Вартість:&nbsp;100.000,
+                    Валюта:&nbsp;UAH
+                        <br>
+                        <strong>Фото:</strong>
+                        <div class="photos">
+                            <img src="http://example.com/photo1.jpg" alt="Фото місця" width="100"><img src="http://example.com/photo2.jpg" alt="Фото місця" width="100"><img src="http://example.com/photo3.jpg" alt="Фото місця" width="100">
+                        </div>
+                        <br>
+                        <strong>Созонність:</strong>All Season
+                        <br>
+                        <strong>Теги:</strong><span>Пляж</span><span>Відпочинок</span>
+                        <br>
+                    </div>
+                </li>
+                <li>
+                    <div class="place">
+                        <strong>Назва:</strong>Пляж Гідропарк
+                        <br>
+                        <strong>Опис:</strong>Популярне місце відпочинку серед місцевих жителів та туристів.
+                        <br>
+                        <strong>Тип:</strong>Beach
+                        <br>
+                        <strong>Адрес:</strong>Гідропарк&nbsp;12A
+                    ,
+                    Київ,
+                    02000
+                        <br>
+                        <strong>Координати:</strong>50.4510,&nbsp;30.5767
+                        <br>
+                        <strong>Час відвідування:</strong>10:00-23:00
+                        <br>
+                        <strong>Вартість входу:</strong>
+                    Вартість:&nbsp;100.000,
+                    Валюта:&nbsp;UAH
+                        <br>
+                        <strong>Фото:</strong>
+                        <div class="photos">
+                            <img src="http://example.com/photo1.jpg" alt="Фото місця" width="100"><img src="http://example.com/photo2.jpg" alt="Фото місця" width="100"><img src="http://example.com/photo3.jpg" alt="Фото місця" width="100">
+                        </div>
+                        <br>
+                        <strong>Созонність:</strong>All Season
+                        <br>
+                        <strong>Теги:</strong><span>Пляж</span><span>Відпочинок</span>
+                        <br>
+                    </div>
+                </li>
+            </ul>
+            <h2>Львів</h2>
+            <p>Координати:</p>
+            <ul>
+                <li>49.8420,&nbsp;24.0323</li>
+                <li>49.8435,&nbsp;24.0311</li>
+                <li>49.8435,&nbsp;24.0311</li>
+            </ul>
+            <p>Місця:</p>
+            <ul>
+                <li>
+                    <div class="place">
+                        <strong>Назва:</strong>Оперний театр
+                        <br>
+                        <strong>Опис:</strong>Знаменитий архітектурний пам'ятник міста Львова.
+                        <br>
+                        <strong>Тип:</strong>Cultural
+                        <br>
+                        <strong>Адрес:</strong>Свободи&nbsp;28
+                    ,
+                    Львів,
+                    79000
+                        <br>
+                        <strong>Координати:</strong>49.8435,&nbsp;24.0256
+                        <br>
+                        <strong>Созонність:</strong>All Season
+                        <br>
+                        <span class="recommended">Рекомендовано</span><strong>Рейтинг:</strong>0.8
+                    </div>
+                </li>
+            </ul>
+            <h2>Одеса</h2>
+            <p>Координати:</p>
+            <ul>
+                <li>46.4825,&nbsp;30.7233</li>
+                <li>46.4810,&nbsp;30.7245</li>
+                <li>46.4810,&nbsp;30.7245</li>
+            </ul>
+            <p>Місця:</p>
+            <ul>
+                <li>
+                    <div class="place">
+                        <strong>Назва:</strong>Потьомкінські сходи
+                        <br>
+                        <strong>Опис:</strong>Знамениті сходи в центрі Одеси.
+                        <br>
+                        <strong>Тип:</strong>Cultural
+                        <br>
+                        <strong>Адрес:</strong>Приморський бульвар&nbsp;1
+                    ,
+                    Одеса,
+                    65000
+                        <br>
+                        <strong>Координати:</strong>46.4868,&nbsp;30.7355
+                        <br>
+                        <strong>Созонність:</strong>All Season
+                        <br>
+                        <strong>Теги:</strong><span>Історичний</span><span>Архітектура</span>
+                        <br>
+                        <span class="recommended">Рекомендовано</span><strong>Рейтинг:</strong>0.9
+                    </div>
+                </li>
+            </ul>
+            <h2>Харків</h2>
+            <p>Координати:</p>
+            <ul>
+                <li>49.9935,&nbsp;36.2304</li>
+                <li>49.9947,&nbsp;36.2292</li>
+                <li>49.9947,&nbsp;36.2292</li>
+            </ul>
+            <p>Місця:</p>
+            <ul>
+                <li>
+                    <div class="place">
+                        <strong>Назва:</strong>Держпром
+                        <br>
+                        <strong>Опис:</strong>Величезний архітектурний комплекс в центрі Харкова.
+                        <br>
+                        <strong>Тип:</strong>Cultural
+                        <br>
+                        <strong>Адрес:</strong>Площа Свободи&nbsp;7А
+                    ,
+                    Харків,
+                    61000
+                        <br>
+                        <strong>Координати:</strong>49.9941,&nbsp;36.2310
+                        <br>
+                        <strong>Созонність:</strong>All Season
+                        <br>
+                        <strong>Теги:</strong><span>Архітектура</span><span>Історія</span>
+                        <br>
+                        <strong>Рейтинг:</strong>0.7
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
