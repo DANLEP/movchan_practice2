@@ -22,7 +22,7 @@ public class XSLTransform {
         TransformerFactory factory = TransformerFactory.newInstance();
         // to be compliant, prohibit the use of all protocols by external entities:
         factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
-        factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_STYLESHEET, "");
+        factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_STYLESHEET, "all");
 
         Transformer t = factory.newTransformer(new StreamSource(new File(xsl)));
         t.transform(new StreamSource(new File(xml)), new StreamResult(new File(htm)));
